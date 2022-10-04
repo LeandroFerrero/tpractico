@@ -16,37 +16,98 @@
         font-family: 'Heebo', sans-serif;
     */
 
+
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a.actual {
+    font-weight: bold;
+}
 .titulo {
     font-family: 'Bungee Hairline', cursive;
 }
 
 
 
+header div.contenedor {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+} 
 
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
 
+header a {
+    padding: 1em;
+}
 
-/*para tablets */
-@media (min-width:481px) { 
-    
-
-
+div.contenedor {
+    width: 1080px;
+    margin: 0 auto;
 }
 
 
+/* .home {
+    height: 100vh;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-size: xx-large;
 
-@media (min-width:768px) { 
-    
+} */
 
 
+
+
+
+
+footer {
+    background: #999;
 }
 
+/*para tablets 
+@media only screen and (min-width:481px) { 
+    
+    #menu, #menu-check {
+        display: none;
+    }
+    
+
+}
+*/
+
+/* para desktop
+@media only screen and (min-width:768px) { 
+    
+#menu, #menu-check {
+    display: none;
+}
+
+}
+*/
 
 
 
