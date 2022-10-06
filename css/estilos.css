@@ -2,9 +2,9 @@
     para los otros dispositivos, 
     celus hasta 480px 
     tablets de 481 a 768px
-    desktop de 769 en adelante */ 
+    desktop de 769 en adelante */
 
-    /*
+/*
     TIPOGRAFIAS  +
     
       Bungee para titulos y menu
@@ -17,16 +17,24 @@
     */
 
 
-
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+.body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../img/fondo\ luces\ .jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+}
+
+
+    {
     font-family: 'Heebo', sans-serif;
 }
 
@@ -38,6 +46,7 @@ a {
 a.actual {
     font-weight: bold;
 }
+
 .titulo {
     font-family: 'Bungee Hairline', cursive;
 }
@@ -45,12 +54,12 @@ a.actual {
 
 
 header div.contenedor {
-   
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-} 
+}
 
 header ul {
     list-style-type: none;
@@ -80,10 +89,6 @@ div.contenedor {
 } */
 
 
-
-
-
-
 footer {
     background: #999;
 }
@@ -108,13 +113,3 @@ footer {
 
 }
 */
-
-
-
-
-
-
-
-
-
-
