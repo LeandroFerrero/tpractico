@@ -30,7 +30,11 @@ body {
 	font-weight: bolder;
 }
 
+.titulo, .nav__item, footer p{
+	font-family: 'Bungee Hairline', cursive;
+	font-weight: 800;
 
+}
 
 
 /*----------------Header NAV MENU -------------------------*/
