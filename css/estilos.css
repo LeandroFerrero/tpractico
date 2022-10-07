@@ -1,115 +1,286 @@
-/* vamos con mbile first y despues los breakpoints
-    para los otros dispositivos, 
-    celus hasta 480px 
-    tablets de 481 a 768px
-    desktop de 769 en adelante */
 
 /*
-    TIPOGRAFIAS  +
-    
-      Bungee para titulos y menu
+TIPOGRAFIAS  +
 
-        font-family: 'Bungee Hairline', cursive;
+    Bungee para titulos y menu
 
-      Textos en general
+    font-family: 'Bungee Hairline', cursive;
 
-        font-family: 'Heebo', sans-serif;
-    */
+    Textos en general
 
+    font-family: 'Heebo', sans-serif;
+*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.body {
-    margin: 0px;
-    padding: 0px;
-    background-image: url(../img/fondo\ luces\ .jpeg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-
-}
-
-
-    {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
     font-family: 'Heebo', sans-serif;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a.actual {
-    font-weight: bold;
-}
-
-.titulo {
-    font-family: 'Bungee Hairline', cursive;
+html {
+  scroll-behavior: smooth;
 }
 
 
 
-header div.contenedor {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-header ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-header a {
-    padding: 1em;
-}
-
-div.contenedor {
-    width: 1080px;
-    margin: 0 auto;
+body {
+	font-family: 'Bungee Hairline', cursive;
+	font-weight: bolder;
 }
 
 
-/* .home {
-    height: 100vh;
-    background-image: url();
-    background-repeat: no-repeat;
+
+
+/*----------------Header NAV MENU -------------------------*/
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+
+
+.nav {
+	background: #293241;
+	height: 80px;
+	color: white;
+
+}
+
+.nav__container {
+	display: flex;
+	height: 100%;
+	width: 90%;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.nav__logo {
+	font-size: 1.5em;
+	margin-right: 20px;
+
+}
+
+.nav__label, .nav__input {
+display: none;
+}
+
+
+.nav__menu {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 3em;
+}
+
+.nav__item {
+	color: white;
+	text-decoration: none;
+	--mascaraMenuItem: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav__item::after {
+	content: "";
+	display: block;
+	background: #fff;
+	width: 90%;
+	margin-top: 1px;
+	height: 3px;
+	clip-path: var(--mascaraMenuItem);
+	transition: 0.3s;
+
+
+}
+
+.nav__item:hover {
+	--mascaraMenuItem: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+/*-------------------- Home   ----------------------*/
+
+
+#home{
+	background-image: url(../img/fondo_luces.jpeg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    color: white;
-    font-size: xx-large;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+   	overflow: hidden;
+}
 
-} */
 
+
+
+
+/*--------------------BIO ---------------------------*/
+
+.bio__container {
+	width: 80%;
+	margin: 30px auto;
+	height: 100vh;
+  	background: white;
+}
+
+
+
+
+/*--------------------EVENTOS ---------------------------*/
+
+
+.eventos__container {
+	height: 100vh;
+  	background: gray;
+}
+
+
+
+
+
+
+/*------------------------Galeria --------------------------------*/
+
+
+
+.galeria__container {
+	width: 100%;
+  	background: tomato;
+  	overflow: hidden;
+}
+
+.galeria {
+
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.galeria ul {
+	margin-top: 15px;
+	display: flex;
+	width: 400%;
+
+	animation: pasafoto 20s infinite alternate;
+	animation-timing-function: ease-in-out;
+
+}
+
+.galeria li {
+	/*width: 100%;*/
+	list-style: none;
+}
+
+.galeria  img {
+	width: 100%;
+
+}
+
+@keyframes pasafoto {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}	
+	45% {margin-left: -100%;}	
+
+	50% {margin-left: -200%;}
+	75% {margin-left: -200%;}	
+
+	80% {margin-left: -300%;}	
+	100% {margin-left: -300%;}	
+
+
+
+
+}
+
+
+/*---------------------Musica ---------------------------------*/
+
+.musica_container {
+	width: 50%;
+	margin: 0 auto;
+    padding: 20px;
+}
+
+/*--------------------- Contacto -------------------------------*/
+
+.contacto__container {
+	height: 100vh;
+  	background: gray;
+}
+
+
+/*---------------------- footer ---------------------------*/
 
 footer {
-    background: #999;
+	background: #293241;
+	height: 80px;
+	padding-top: 10px;
+	color: white;
+	text-align: center;
 }
 
-/*para tablets 
-@media only screen and (min-width:481px) { 
-    
-    #menu, #menu-check {
-        display: none;
-    }
-    
-
-}
-*/
-
-/* para desktop
-@media only screen and (min-width:768px) { 
-    
-#menu, #menu-check {
-    display: none;
+footer a {
+	color: white;
+	font-size: 1em;
 }
 
+
+/*------------------ media querys---------------------------- */
+
+
+
+
+
+@media (max-width:  768px) {
+
+
+
+/*------- MENU NAV HEADER ------ */
+	.nav__label {
+		display: block;
+		cursor: pointer;
+	}
+
+	.nav__menu {
+
+		position: fixed;
+		top: 80px;
+		bottom: 0;
+		background: tomato;
+		width: 100%;
+		left: 0;
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: column;
+		align-items: center;
+		clip-path: circle(0 at center);
+		transition: clip-path 0.5s ease-in-out;
+	}
+
+	/* cuando selecciones el input su hermano adyacente .nav__menu*/
+	.nav__input:checked + .nav__menu {
+		background: tomato;
+		/*background-image: url(../img/fondo_luces.jpeg);
+		filter: drop-shadow(15px);
+		-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+		background-size: cover;*/
+
+		clip-path: circle(100% at center);
+	}
+
+
+/*------------              --------------*/
+
+
 }
-*/

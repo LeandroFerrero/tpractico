@@ -1,94 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fulanos</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Heebo&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9107ff6d22.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Heebo&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/9107ff6d22.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
-    <header>
+	<header id="prueba">
+		<nav class="nav">
+			<div class="nav__container">
 
-        <div class="contenedor">
-            <h1 class="titulo" id="home">FULANOSdelROCK</h1>
+				<h1 class="nav__logo">FulanosdelRock</h1>
 
-            <!-- <input type="checkbox" name="" id="menu-check">
-            <label id="menu"   for="menu-check">
-                <span id="menu-abrir"><i class="fa-solid fa-bars"></i></span>
-                <span id="menu-cerrar"><i class="fa-sharp fa-solid fa-xmark"></i></span>
-            </label> -->
+				<label class="nav__label" for="menu">
+					<i class="fa-solid fa-bars nav__img"></i>
+				</label>
+				<input type="checkbox" id="menu" class="nav__input">
 
-            <ul>
-                <li><a href="#home" class="actual">HOME</a></li>
-                <li><a href="#bio">BIO</a></li>
-                <li><a href="#shows">SHOWS</a></li>
-                <li><a href="#galeria">GALERIA</a></li>
-                <li><a href="#musica">MUSICA</a></li>
-            </ul>
-        </div>
-        </nav>
-    </header>
+				<div class="nav__menu">
+					<a href="#home" class="nav__item">Home</a>
+					<a href="#bio" class="nav__item">Bio</a>
+					<a href="#eventos" class="nav__item">Eventos</a>
+					<a href="#galeria" class="nav__item">Galeria</a>
+					<a href="#musica" class="nav__item">Musica</a>
+					<a href="#footer" class="nav__item">Contacto</a>
+				</div>
 
-    <section class="home">
-        <div class="contenedor">
-            <h2 class="titulo"> LOGO DE LA BANDA O FOTO // FRASE</h2>
-        </div>
+			</div>
+		</nav>
+	</header>
 
-    </section>
+	<main>
+		<section id="home">
 
-    <main>
-        <section id="bio">
-            <p>Fulanos del Rock nace en 1998 en la Ciudad de Buenos Aires- Argentina
-                La banda se destaca por crear canciones con un estilo de rock urbano.
-                Su música se viene depurando desde hace 5 años, colaborando con diferente autores y músicos y tocando en
-                diferentes festivales como por ejemplo: Cosquin Rock y Fiestas regionales a lo largo del país .
-                Su discografía cuenta con 2 discos de estudio y 1 grabado en vivo durante su participación en el
-                Festival de Cosquin.
-                El grupo se compone por el cantante principal Daniel Bloom que estudió en el conservatorio de Buenos
-                Aires y
-                durante su juventud fue participando de diferentes bandas de musica aportando su impronta. David y
-                Julian Sehman en el bajo, Javier Suarez en la batería, Clara Lis en guitarra y coros. </p>
+		</section>
 
-        </section>
+		<section id="bio">
+			<div class="bio__container">
+				<p>Fulanos del Rock nace en 1998 en la Ciudad de Buenos Aires- Argentina
+					La banda se destaca por crear canciones con un estilo de rock urbano.
+					Su música se viene depurando desde hace 5 años, colaborando con diferente autores y músicos y
+					tocando en
+					diferentes festivales como por ejemplo: Cosquin Rock y Fiestas regionales a lo largo del país .
+					Su discografía cuenta con 2 discos de estudio y 1 grabado en vivo durante su participación en el
+					Festival de Cosquin.
+					El grupo se compone por el cantante principal Daniel Bloom que estudió en el conservatorio de Buenos
+					Aires y
+					durante su juventud fue participando de diferentes bandas de musica aportando su impronta. David y
+					Julian Sehman en el bajo, Javier Suarez en la batería, Clara Lis en guitarra y coros. </p>
+			</div>
 
-        <section id="shows">
+		</section>
 
-            ACA VA SHOWS // CONTACTO
+		<section id="eventos">
+			<div class="eventos__container"></div>
 
-        </section>
+		</section>
 
-        <section id="galeria">
-            <link rel="stylesheet" href="/img/foto grupo.jpg">
-            <link rel="stylesheet" href="/img/foto grupo 2.jpg">
-            <link rel="stylesheet" href="/img/foto cantante">
-            ACA VA GALERIA
 
-        </section>
 
-        <section id="musica"> ACA VA SPOTIFY
-            <h2>Música de Spotify</h2>
-            <iframe style="border-radius:12px"
-                src="https://open.spotify.com/artist/6FFK9D2EkW7TIhZiketznd?si=b2746G3pSYmbj43Qva9D4g" width="100%"
-                height="80" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+		<section class="galeria__container">
 
-        </section>
+			<a id="galeria"></a>
 
-    </main>
+			<div class="galeria">
 
-    <footer>
+				<ul>
+					<li><img src="img/galeria/clara_voces.jpg" alt=""></li>
+					<li><img src="img/galeria/cantante.jpg" alt=""></li>
+					<li><img src="img/galeria/mix.jpg" alt=""></li>
+					<li><img src="img/galeria/cassette.jpg" alt=""></li>
+					<!--
+					<li><img src="img/galeria/publico.jpg" alt=""></li>
+					<li><img src="img/galeria/bateria.jpg" alt=""></li>
+					<li><img src="img/galeria/rgb.jpg" alt=""></li>
+					<li><img src="img/galeria/guitarra.jpg" alt=""></li>
+					<li><img src="img/galeria/publico2.jpg" alt=""></li>
+					<li><img src="img/galeria/backstage.jpg" alt=""></li>
+					-->
 
-        este es el footer
+				</ul>
 
-    </footer>
+			</div>
 
+		</section>
+
+
+
+		<section id="musica">
+			<div class="musica_container">
+				<h2>Opcion 1 de Spotify compacta</h2>
+				<iframe style="border-radius:12px"
+					src="https://open.spotify.com/embed/artist/6FFK9D2EkW7TIhZiketznd?utm_source=generator" width="30%"
+					height="80" frameBorder="0" allowfullscreen=""
+					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+					loading="lazy"></iframe>
+
+				<h2>Opcion 2 de Spotify grande</h2>
+				<iframe style="border-radius:12px"
+					src="https://open.spotify.com/embed/artist/6FFK9D2EkW7TIhZiketznd?utm_source=generator" width="100%"
+					height="380" frameBorder="0" allowfullscreen=""
+					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+					loading="lazy"></iframe>
+			</div>
+		</section>
+
+		<section id="contacto">
+			<div class="contacto__container">
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer id="footer">
+
+		<a href="https://www.youtube.com/c/FULANOSFAMILY" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+		<a href="https://open.spotify.com/artist/6FFK9D2EkW7TIhZiketznd?si=PhM4FbHNR5ub9bV0GkHmvQ" target="_blank"><i
+				class="fa-brands fa-spotify"></i></i></a>
+		<a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="https://www.facebook.com/username" target="_blank"><i class="fa fa-facebook"
+				aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/username/" target="_blank"><i class="fa fa-instagram"
+				aria-hidden="true"></i></a>
+
+
+
+		<p>Derechos Reservados @2022</p>
+	</footer>
+
+
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
