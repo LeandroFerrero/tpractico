@@ -17,26 +17,49 @@ TIPOGRAFIAS  +
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
     font-family: 'Heebo', sans-serif;
+	font-size: 62.5%;
+
 }
 
 html {
   scroll-behavior: smooth;
+
 }
 
 
 
 body {
-	font-family: 'Bungee Hairline', cursive;
+
 	font-weight: bolder;
+	background: tomato;
+	max-width: 1600px;
+
 }
+
 
 .titulo, .nav__item, footer p{
 	font-family: 'Bungee Hairline', cursive;
-	font-weight: 800;
-
+	font-weight: bolder;
+	font-size: 2rem;
 }
 
 
+h1.titulo, .nav__label{
+	font-size: 4rem;
+}
+
+h2.titulo{
+	font-size: 3rem;
+}
+
+h3.titulo {
+	font-size: 2.5rem;
+}
+
+p {
+	font-size: 1.8rem;
+	font-weight: 200;
+}
 /*----------------Header NAV MENU -------------------------*/
 
 header {
@@ -65,7 +88,7 @@ header {
 
 
 .nav__logo {
-	font-size: 1.5em;
+	font-size: em;
 	margin-right: 20px;
 
 }
@@ -78,7 +101,7 @@ display: none;
 .nav__menu {
 	display: grid;
 	grid-auto-flow: column;
-	gap: 3em;
+	gap: 3rem;
 }
 
 .nav__item {
@@ -96,8 +119,6 @@ display: none;
 	height: 3px;
 	clip-path: var(--mascaraMenuItem);
 	transition: 0.3s;
-
-
 }
 
 .nav__item:hover {
@@ -126,12 +147,18 @@ display: none;
 
 
 /*--------------------BIO ---------------------------*/
+#bio {
+	background:#fff;
+
+}
 
 .bio__container {
 	width: 80%;
 	margin: 30px auto;
 	height: 100vh;
-  	background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 
@@ -141,13 +168,52 @@ display: none;
 
 
 .eventos__container {
-	height: 100vh;
-  	background: gray;
+	margin-top: 110px;
+    width: 100%;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	background: #fff;
+	overflow: hidden;
+}
+
+.eventos__textos {
+
+	width: 40%;
+}
+
+.eventos__imagen {
+	width: 60%;
+}
+
+.eventos__imagen img{
+	width: 100%;
 }
 
 
 
+.item__evento{
 
+	padding: 100px;
+	text-align: center;
+}
+
+
+.item__evento .titulo::after {
+	content: "";
+	display: block;
+	background: tomato;
+	width: 80%;
+	height: 3px;
+	position: relative;
+	top: -15px;
+	left: 30px;
+
+}
+
+.item__evento article{
+	margin-top: 20px;
+}
 
 
 /*------------------------Galeria --------------------------------*/
@@ -161,7 +227,7 @@ display: none;
 }
 
 .galeria {
-
+	padding-top: 50px;
 	width: 100%;
 	margin: auto;
 	overflow: hidden;
@@ -172,7 +238,7 @@ display: none;
 	display: flex;
 	width: 400%;
 
-	animation: pasafoto 20s infinite alternate;
+	animation: pasafoto 18s infinite alternate;
 	animation-timing-function: ease-in-out;
 
 }
@@ -189,15 +255,15 @@ display: none;
 
 @keyframes pasafoto {
 	0% {margin-left: 0;}
-	20% {margin-left: 0;}
+	15% {margin-left: 0;}
 
 	25% {margin-left: -100%;}	
-	45% {margin-left: -100%;}	
+	47% {margin-left: -100%;}	
 
-	50% {margin-left: -200%;}
-	75% {margin-left: -200%;}	
+	52% {margin-left: -200%;}
+	77% {margin-left: -200%;}	
 
-	80% {margin-left: -300%;}	
+	85% {margin-left: -300%;}	
 	100% {margin-left: -300%;}	
 
 
@@ -208,25 +274,99 @@ display: none;
 
 /*---------------------Musica ---------------------------------*/
 
+ #musica{
+	background: #fff;
+	
+
+
+ }
+
 .musica_container {
+	margin: auto;
 	width: 50%;
-	margin: 0 auto;
-    padding: 20px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
 }
 
 /*--------------------- Contacto -------------------------------*/
 
-.contacto__container {
-	height: 100vh;
-  	background: gray;
+#contacto {
+	background: tomato;
+
 }
+.contacto__container {
+	margin: auto auto;
+
+	width: 60%;
+	height: 100vh;
+  	background: tomato;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.form {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+
+}
+
+.input {
+	background: transparent;
+	border: 0;
+	color: #fff;
+	outline: none;
+	border: 1px solid white;
+	padding: 20px 10px;
+	font-size: 2rem;
+}
+
+.input::placeholder {
+color: #fff;
+font-family: 'raleway','sans-serif';
+
+}
+
+input[type="text"],
+input[type="email"] {
+display: inline-block;
+width: 49%;
+margin-bottom: 30px;
+}
+
+.form textarea {
+width: 100%;
+margin-bottom: 15px;
+resize:none;
+}
+
+input[type="submit"] {
+width: 120px;
+text-align: center;
+padding: 14px 0;
+}
+
+input[type="submit"]:hover {
+cursor: pointer;
+color: tomato;
+background:#fff;
+}
+
+
 
 
 /*---------------------- footer ---------------------------*/
 
 footer {
 	background: #293241;
-	height: 80px;
 	padding-top: 10px;
 	color: white;
 	text-align: center;
@@ -234,19 +374,23 @@ footer {
 
 footer a {
 	color: white;
-	font-size: 1em;
+	font-size: 3rem;
 }
 
 
-/*------------------ media querys---------------------------- */
+/*============================================================================================
+		--------------------------------- media querys---------------------------- 
+  ============================================================================================*/
 
 
-
+/*===========================  TABLET ==================================*/
 
 
 @media (max-width:  768px) {
 
-
+	*{
+		font-size: 50%;
+	}
 
 /*------- MENU NAV HEADER ------ */
 	.nav__label {
@@ -284,7 +428,75 @@ footer a {
 	}
 
 
-/*------------              --------------*/
+/*------------    Eventos          --------------*/
+
+.eventos__container {
+	flex-direction: column-reverse;
+}
+
+
+
+.eventos__textos {
+	width: 100%;
+}
+
+.eventos__imagen {
+	width: 100%;
+}
+
+.eventos__imagen img {
+	width: 100%;
+}
+
+
+/*------------     Galeria            --------------*/
+
+	.galeria ul {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		animation: none;
+	}
+
+	.galeria li {
+		/*width: 100%;*/
+		list-style: none;
+	}
+
+	.galeria  img {
+		width: 100%;
+
+
+	}
+
+/*-------- Contacto  ------*/
+
+	input[type="text"],
+	input[type="email"] {
+	display: block;
+	width: 100%;
+	height: fit-content;
+	margin-bottom: 30px;
+	}
+
+}
+
+
+
+/*=================================  MOVIL =======================================*/
+
+@media (max-width:  480px) {
+*{
+	font-size: 40%;
+}
+
+
+
+
+
 
 
 }
+
+
