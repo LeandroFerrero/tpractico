@@ -5,16 +5,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Fulanos del Rock</title>
+	<title>Fulanos</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Heebo&display=swap" rel="stylesheet">
 	<link rel="icon" href="img/favicom2.ico" type="image/x-icon">
 	<script src="https://kit.fontawesome.com/9107ff6d22.js" crossorigin="anonymous"></script>
-	<link rel="icon" href="img/galeria/favicom2.ico">
-	<!--Agregado de Favicom-->
-
 </head>
 
 <body>
@@ -77,40 +74,42 @@
 			</div>
 
 		</section>
-
-		<section id="eventos">
+		<a id="eventos"></a>
+		<section>
 			<div class="eventos__container">
-				<h2 class="titulo">Proximos Eventos</h2>
-			</div>
-			<div class="lesftbox">
-				<div class="content">
-					<h1>Shows Programados</h1>
+				<div class="eventos__textos">
+					<div class="item__evento">
+
+						<h2 class="titulo">Proximos Eventos</h2>
+						<article>
+							<h3 class="titulo">30 de Marzo - Cordoba</h3>
+								<p>Lugar: Estadio Chateau Carreras </p> 
+								<p>Horario: 22 Hs. </p>
+								<p>Presentacion nuevo video y apertura de la gira.</p>
+						</article>
+						<!--
+						<article>
+							<h3 class="titulo">10 de Abril - Chubut</h3>
+							<p>Lugar: Centro Cultural Nahuel </p> 
+							<p>Horario: 21:30 Hs. </p>
+							<p>Grupo soporte: "Los de nunca".</p>
+						</article>
+ 						<article>
+							<h3 class="titulo">20 de Abril - Salta</h3>
+							<p>Lugar: Estadio El gigante del Norte </p> 
+							<p>Horario: 21:30 Hs. </p>
+							<p>Grupo soporte: "Los Quebrados".</p>
+						</article> -->
+					</div>
 				</div>
-			</div>
-			<div class="eventos">
-				<ul>
-					<li>
-						<div class="time">
-							<h2>
-								15 de Octubre<br><span> Obras CABA</span>
-							</h2>
-							<h2>28 de Noviembre <br><span>Luna Park CABA</span>
-							</h2>
-							<h2> 14 de Marzo <br><span>Estadio centenario Uruguay</span>
-							</h2>
-							<h2> 12 de Mayo <br><span>Predio de Cosquin Córdoba</span>
-							</h2>
-						</div>
 
-					</li>
-
-
-				</ul>
+				<div class="eventos__imagen">
+					<img src="img/backstage.jpg" alt="">
+				</div>
 
 
 			</div>
 
-			</div>
 
 		</section>
 
@@ -133,7 +132,6 @@
 					<li><img src="img/galeria/rgb.jpg" alt=""></li>
 					<li><img src="img/galeria/guitarra.jpg" alt=""></li>
 					<li><img src="img/galeria/publico2.jpg" alt=""></li>
-					<li><img src="img/galeria/backstage.jpg" alt=""></li>
 					-->
 
 				</ul>
@@ -142,8 +140,16 @@
 
 		</section>
 
+
+
 		<section id="musica">
 			<div class="musica_container">
+				<!-- <h2 class="titulo">Opcion 1 de Spotify compacta</h2>
+				<iframe style="border-radius:12px"
+					src="https://open.spotify.com/embed/artist/6FFK9D2EkW7TIhZiketznd?utm_source=generator" width="30%"
+					height="80" frameBorder="0" allowfullscreen=""
+					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+					loading="lazy"></iframe> -->
 
 				<h2 class="Musica en Spotify">Fulanos en Spotify!</h2>
 				<iframe style="border-radius:12px"
@@ -154,6 +160,19 @@
 			</div>
 		</section>
 
+		<section id="contacto" >
+
+			<div class="contacto__container">
+
+				<h2 class="titulo">Contactanos</h2>
+				<form action="" class="form">
+					<input class="input" type="text" name="" id="" placeholder="Nombre" required>
+					<input class="input" type="email" name="" id="" placeholder="Email" required>
+					<textarea class="input" name="" id="" cols="30" rows="8" placeholder="Mensaje" ></textarea>
+					<input class="input" type="submit" value="Enviar">					
+				</form>
+			</div>
+		</section>
 
 	</main>
 
