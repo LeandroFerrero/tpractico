@@ -272,8 +272,8 @@ display: none;
 
 }
 
-.twitter{
-	background-image: url(../img/redes/twitter_color.png);
+.apple{
+	background-image: url(../img/redes/apple_music_color.png);
 	background-size: 30px;
    	overflow: hidden;
    	width: 30px;
@@ -283,7 +283,7 @@ display: none;
     transition: 0.3s;
 }
 
-.twitter:hover {
+.apple:hover {
 	background-size: 40px;
    	width: 40px;
    	height: 40px;
@@ -520,6 +520,7 @@ footer {
 footer a {
 	color: white;
 	font-size: 3rem;
+	margin: 0 10px;
 }
 
 
