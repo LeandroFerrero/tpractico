@@ -1,13 +1,8 @@
-
 /*
 TIPOGRAFIAS  +
-
     Bungee para titulos y menu
-
     font-family: 'Bungee Hairline', cursive;
-
     Textos en general
-
     font-family: 'Heebo', sans-serif;
 */
 
@@ -16,14 +11,14 @@ TIPOGRAFIAS  +
 	padding: 0;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-    font-family: 'Heebo', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 62.5%;
 
 }
 
 html {
-  scroll-behavior: smooth;
-  background: #293241;
+	scroll-behavior: smooth;
+	background: #293241;
 
 
 }
@@ -34,27 +29,30 @@ body {
 
 	font-weight: bolder;
 	/* background: #293241; */
-	  background: tomato;
+	background: tomato;
 	max-width: 1600px;
 	margin: auto;
 }
 
 
-.titulo, .nav__item, footer p{
+.titulo,
+.nav__item,
+footer p {
 	font-family: 'Bungee Hairline', cursive;
 	font-weight: bolder;
 	font-size: 2rem;
 }
 
 
-h1.titulo, .nav__label{
+h1.titulo,
+.nav__label {
 	font-size: 4rem;
 }
 
 h1.titulo {
 	color: tomato;
-	}
-	
+}
+
 h1.titulo span {
 	font-family: 'Bungee Hairline', cursive;
 	font-weight: bolder;
@@ -62,7 +60,7 @@ h1.titulo span {
 	color: white;
 }
 
-h2.titulo{
+h2.titulo {
 	font-size: 3rem;
 	font-weight: bolder;
 }
@@ -80,6 +78,7 @@ p {
 	font-size: 1.8rem;
 	font-weight: 200;
 }
+
 /*----------------Header NAV MENU -------------------------*/
 
 header {
@@ -109,13 +108,14 @@ header {
 
 
 .nav__logo {
-/* font size ????*/
+	/* font size ????*/
 	margin-right: 20px;
 
 }
 
-.nav__label, .nav__input {
-display: none;
+.nav__label,
+.nav__input {
+	display: none;
 }
 
 
@@ -126,8 +126,8 @@ display: none;
 }
 
 .nav__item {
-	color: white; 
-	text-decoration: none; 
+	color: white;
+	text-decoration: none;
 	--mascaraMenuItem: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
@@ -150,20 +150,20 @@ display: none;
 /*-------------------- Home   ----------------------*/
 
 
-#home{
+#home {
 	background-image: url(../img/fondo_luces.jpeg);
 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    width: 100%;
-    height: 100vh;
-   	overflow: hidden;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
 	display: flex;
-   	justify-content: center;
-   	align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -178,7 +178,7 @@ display: none;
 }
 
 .logo img {
-	width: 100%;	
+	width: 100%;
 }
 
 
@@ -202,19 +202,19 @@ display: none;
 .facebook {
 	background-image: url(../img/redes/facebook_color.png);
 	background-size: 30px;
-   	overflow: hidden;
-   	width: 30px;
-   	height: 30px;
-   	margin: 10px;
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+	margin: 10px;
 	filter: grayscale(100%);
-   	transition: 0.5s;
+	transition: 0.5s;
 }
 
 
 .facebook:hover {
 	background-size: 40px;
-   	width: 40px;
-   	height: 40px;
+	width: 40px;
+	height: 40px;
 	filter: grayscale(0%);
 }
 
@@ -223,38 +223,38 @@ display: none;
 .spotify {
 	background-image: url(../img/redes/spotify_color.png);
 	background-size: 30px;
-   	overflow: hidden;
-   	width: 30px;
-   	height: 30px;
-   	margin: 10px;
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+	margin: 10px;
 	filter: grayscale(100%);
-   	transition: 0.5s;
+	transition: 0.5s;
 }
 
 
 .spotify:hover {
 	background-size: 40px;
-   	width: 40px;
-   	height: 40px;
+	width: 40px;
+	height: 40px;
 	filter: grayscale(0%);
 }
 
 
-.instagram{
+.instagram {
 	background-image: url(../img/redes/instagram_color.png);
 	background-size: 30px;
-   	overflow: hidden;
-   	width: 30px;
-   	height: 30px;
-   	margin: 10px;
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+	margin: 10px;
 	filter: grayscale(100%);
-   	transition: 0.5s;
+	transition: 0.5s;
 }
 
 .instagram:hover {
 	background-size: 40px;
-   	width: 40px;
-   	height: 40px;
+	width: 40px;
+	height: 40px;
 	filter: grayscale(0%);
 }
 
@@ -262,44 +262,44 @@ display: none;
 .youtube {
 	background-image: url(../img/redes/youtube_color.png);
 	background-size: 30px;
-   	overflow: hidden;
-   	width: 30px;
-   	height: 30px;
-   	margin: 10px;
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+	margin: 10px;
 	filter: grayscale(100%);
-   	transition: 0.3s;
+	transition: 0.3s;
 }
 
 .youtube:hover {
 	background-size: 40px;
-   	width: 40px;
-   	height: 40px;
+	width: 40px;
+	height: 40px;
 	filter: grayscale(0%);
 
 }
 
-.apple{
+.apple {
 	background-image: url(../img/redes/apple_music_color.png);
 	background-size: 30px;
-   	overflow: hidden;
-   	width: 30px;
-   	height: 30px;
-   	margin: 10px;
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+	margin: 10px;
 	filter: grayscale(100%);
-    transition: 0.3s;
+	transition: 0.3s;
 }
 
 .apple:hover {
 	background-size: 40px;
-   	width: 40px;
-   	height: 40px;
+	width: 40px;
+	height: 40px;
 	filter: grayscale(0%);
 }
 
 
 /*--------------------BIO ---------------------------*/
 #bio {
-	background:#fff;
+	background: #fff;
 
 }
 
@@ -312,15 +312,33 @@ display: none;
 	justify-content: center;
 }
 
+.centrar_fotos {
+
+	width: 100%;
+	display: flex;
+	justify-content: center;
 
 
+}
+
+.circulo {
+	width: 200px;
+	height: 200px;
+	justify-content: center;
+	border-radius: 100%;
+	background-size: cover;
+	margin: auto;
+	padding: 2px;
+	object-fit: cover;
+
+}
 
 /*--------------------EVENTOS ---------------------------*/
 
 
 .eventos__container {
 	margin-top: 110px;
-    width: 100%;
+	width: 100%;
 	display: flex;
 	align-content: center;
 	align-items: center;
@@ -337,32 +355,25 @@ display: none;
 	width: 60%;
 }
 
-.eventos__imagen img{
+.eventos__imagen img {
 	width: 100%;
 }
 
 
-
-.item__evento{
+.item__evento {
 
 	padding: 100px;
 	text-align: center;
 }
 
+.item__evento .titulo {
 
-.item__evento .titulo::after {
-	content: "";
-	display: block;
-	background: tomato;
-	width: 80%;
-	height: 3px;
-	position: relative;
-	top: -15px;
-	left: 30px;
+	text-decoration: underline tomato;
 
 }
 
-.item__evento article{
+
+.item__evento article {
 	margin-top: 20px;
 }
 
@@ -373,8 +384,8 @@ display: none;
 
 .galeria__container {
 	width: 100%;
-  	background: tomato;
-  	overflow: hidden;
+	background: tomato;
+	overflow: hidden;
 }
 
 .galeria {
@@ -399,23 +410,43 @@ display: none;
 	list-style: none;
 }
 
-.galeria  img {
+.galeria img {
 	width: 100%;
 
 }
 
 @keyframes pasafoto {
-	0% {margin-left: 0;}
-	15% {margin-left: 0;}
+	0% {
+		margin-left: 0;
+	}
 
-	25% {margin-left: -100%;}	
-	47% {margin-left: -100%;}	
+	15% {
+		margin-left: 0;
+	}
 
-	52% {margin-left: -200%;}
-	77% {margin-left: -200%;}	
+	25% {
+		margin-left: -100%;
+	}
 
-	85% {margin-left: -300%;}	
-	100% {margin-left: -300%;}	
+	47% {
+		margin-left: -100%;
+	}
+
+	52% {
+		margin-left: -200%;
+	}
+
+	77% {
+		margin-left: -200%;
+	}
+
+	85% {
+		margin-left: -300%;
+	}
+
+	100% {
+		margin-left: -300%;
+	}
 
 
 
@@ -425,24 +456,24 @@ display: none;
 
 /*---------------------Musica ---------------------------------*/
 
- #musica{
+#musica {
 	background-image: url(../img/fondo_luces.jpeg);
 	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    width: 100%;
-    height: 100vh;
-   	overflow: hidden;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
 	display: flex;
-   	justify-content: center;
-   	align-items: center;
-	
+	justify-content: center;
+	align-items: center;
 
 
- }
+
+}
 
 .musica_container {
 	margin: auto;
@@ -462,12 +493,13 @@ display: none;
 	background: tomato;
 
 }
+
 .contacto__container {
 	margin: auto auto;
 
 	width: 60%;
 	height: 100vh;
-  	background: tomato;
+	background: tomato;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -476,9 +508,9 @@ display: none;
 
 
 .form {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
 
 }
@@ -494,34 +526,34 @@ justify-content: space-between;
 }
 
 .input::placeholder {
-color: #fff;
-font-family: 'raleway','sans-serif';
+	color: #fff;
+	font-family: 'raleway', 'sans-serif';
 
 }
 
 input[type="text"],
 input[type="email"] {
-display: inline-block;
-width: 49%;
-margin-bottom: 30px;
+	display: inline-block;
+	width: 49%;
+	margin-bottom: 30px;
 }
 
 .form textarea {
-width: 100%;
-margin-bottom: 15px;
-resize:none;
+	width: 100%;
+	margin-bottom: 15px;
+	resize: none;
 }
 
 input[type="submit"] {
-width: 120px;
-text-align: center;
-padding: 14px 0;
+	width: 120px;
+	text-align: center;
+	padding: 14px 0;
 }
 
 input[type="submit"]:hover {
-cursor: pointer;
-color: tomato;
-background:#fff;
+	cursor: pointer;
+	color: tomato;
+	background: #fff;
 }
 
 
@@ -551,13 +583,13 @@ footer a {
 /*===========================  TABLET ==================================*/
 
 
-@media (max-width:  768px) {
+@media (max-width: 768px) {
 
-	*{
+	* {
 		font-size: 50%;
 	}
 
-/*------- MENU NAV HEADER ------ */
+	/*------- MENU NAV HEADER ------ */
 	.nav__label {
 		display: block;
 		cursor: pointer;
@@ -580,7 +612,7 @@ footer a {
 	}
 
 	/* cuando selecciones el input su hermano adyacente .nav__menu*/
-	.nav__input:checked + .nav__menu {
+	.nav__input:checked+.nav__menu {
 		background: tomato;
 		/*background-image: url(../img/fondo_luces.jpeg);
 		filter: drop-shadow(15px);
@@ -602,80 +634,81 @@ footer a {
 		text-align: center;
 		transition: 0.5s;
 	}
-	.nav__item:hover{
+
+	.nav__item:hover {
 		backdrop-filter: brightness(30%);
 	}
 
-/*----------------------- HOME ----------------*/
+	/*----------------------- HOME ----------------*/
 
-#home{
-	background-image: url(../img/fondo_luces.jpeg);
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    width: 100%;
-	max-height: 800px;
-   	overflow: hidden;
-   	flex-direction: column;
-   	justify-content: center;
-   	align-items: center;
-}
-
-
-.logo {
-	flex-basis: 50%;
-
-}
-
-.logo img {
-
-	margin-left: 15%;
-	width: 70%;	
-}
-
-.social__container {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-
-} 
-
-.iconos {
-	display: flex;
-	justify-content: space-evenly;
-	width: 100%;
-	height: 65px;
-	padding: 10px;
-	background: #293241;
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-}
+	#home {
+		background-image: url(../img/fondo_luces.jpeg);
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+		width: 100%;
+		max-height: 800px;
+		overflow: hidden;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
 
-/*------------    Eventos          --------------*/
+	.logo {
+		flex-basis: 50%;
 
-.eventos__container {
-	flex-direction: column-reverse;
-}
+	}
+
+	.logo img {
+
+		margin-left: 15%;
+		width: 70%;
+	}
+
+	.social__container {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+
+	}
+
+	.iconos {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		height: 65px;
+		padding: 10px;
+		background: #293241;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
 
 
-.eventos__textos {
-	width: 100%;
-}
+	/*------------    Eventos          --------------*/
 
-.eventos__imagen {
-	width: 100%;
-}
-
-.eventos__imagen img {
-	width: 100%;
-}
+	.eventos__container {
+		flex-direction: column-reverse;
+	}
 
 
-/*------------     Galeria            --------------*/
+	.eventos__textos {
+		width: 100%;
+	}
+
+	.eventos__imagen {
+		width: 100%;
+	}
+
+	.eventos__imagen img {
+		width: 100%;
+	}
+
+
+	/*------------     Galeria            --------------*/
 
 	.galeria ul {
 		margin-top: 15px;
@@ -690,18 +723,18 @@ footer a {
 		list-style: none;
 	}
 
-	.galeria  img {
+	.galeria img {
 		width: 100%;
 	}
 
-/*-------- Contacto  ------*/
+	/*-------- Contacto  ------*/
 
 	input[type="text"],
 	input[type="email"] {
-	display: block;
-	width: 100%;
-	height: fit-content;
-	margin-bottom: 30px;
+		display: block;
+		width: 100%;
+		height: fit-content;
+		margin-bottom: 30px;
 	}
 
 }
@@ -710,24 +743,22 @@ footer a {
 
 /*=================================  MOVIL =======================================*/
 
-@media (max-width:  480px) {
-*{
-	font-size: 40%;
+@media (max-width: 480px) {
+	* {
+		font-size: 40%;
+	}
+
+	#home {
+		max-height: 400px;
+	}
+
+	.logo {
+		width: 50%;
+	}
+
+
+
+
+
+
 }
-
-#home{
-	max-height: 400px;
-}
-
-.logo {
-	width: 50%;
-}
-
-
-
-
-
-
-}
-
-
