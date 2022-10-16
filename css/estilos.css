@@ -13,22 +13,17 @@ TIPOGRAFIAS  +
 	box-sizing: border-box;
 	font-family: 'Heebo', sans-serif;
 	font-size: 62.5%;
-
 }
 
 html {
 	scroll-behavior: smooth;
 	background: #293241;
-
-
 }
 
 
 
 body {
-
 	font-weight: bolder;
-	/* background: #293241; */
 	background: tomato;
 	max-width: 1600px;
 	margin: auto;
@@ -89,12 +84,10 @@ header {
 }
 
 
-
 .nav {
 	background: #293241;
 	height: 80px;
 	color: white;
-
 }
 
 .nav__container {
@@ -108,9 +101,7 @@ header {
 
 
 .nav__logo {
-	/* font size ????*/
 	margin-right: 20px;
-
 }
 
 .nav__label,
@@ -174,7 +165,6 @@ header {
 
 .logo {
 	flex-basis: 30%;
-
 }
 
 .logo img {
@@ -275,7 +265,6 @@ header {
 	width: 40px;
 	height: 40px;
 	filter: grayscale(0%);
-
 }
 
 .apple {
@@ -300,12 +289,11 @@ header {
 /*--------------------BIO ---------------------------*/
 #bio {
 	background: #fff;
-
 }
 
 .bio__container {
 	width: 80%;
-	margin: 30px auto;
+	margin: 40px auto;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -313,24 +301,19 @@ header {
 }
 
 .centrar_fotos {
-
 	width: 100%;
+	margin-top: 30px;
 	display: flex;
 	justify-content: center;
-
-
 }
 
 .circulo {
 	width: 200px;
 	height: 200px;
-	justify-content: center;
-	border-radius: 100%;
-	background-size: cover;
+	border-radius: 50%;
 	margin: auto;
 	padding: 2px;
 	object-fit: cover;
-
 }
 
 /*--------------------EVENTOS ---------------------------*/
@@ -347,7 +330,6 @@ header {
 }
 
 .eventos__textos {
-
 	width: 40%;
 }
 
@@ -406,7 +388,6 @@ header {
 }
 
 .galeria li {
-	/*width: 100%;*/
 	list-style: none;
 }
 
@@ -611,21 +592,14 @@ footer a {
 		transition: clip-path 0.5s ease-in-out;
 	}
 
-	/* cuando selecciones el input su hermano adyacente .nav__menu*/
+
 	.nav__input:checked+.nav__menu {
 		background: tomato;
-		/*background-image: url(../img/fondo_luces.jpeg);
-		filter: drop-shadow(15px);
-		-webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-		background-size: cover;*/
-
 		clip-path: circle(100% at center);
 	}
 
 	.nav__img {
-		font-size: 4rem;
+		font-size: 3.5rem;
 	}
 
 	.nav__item {
@@ -633,10 +607,6 @@ footer a {
 		width: 100%;
 		text-align: center;
 		transition: 0.5s;
-	}
-
-	.nav__item:hover {
-		backdrop-filter: brightness(30%);
 	}
 
 	/*----------------------- HOME ----------------*/
@@ -664,9 +634,9 @@ footer a {
 	}
 
 	.logo img {
-
-		margin-left: 15%;
-		width: 70%;
+		margin: auto;
+		display: block;
+		width: 50%;
 	}
 
 	.social__container {
@@ -687,6 +657,18 @@ footer a {
 		border-bottom-left-radius: 0px;
 	}
 
+	/*---------------------    BIO    --------------------*/
+
+
+	.bio__container > .titulo{
+		margin-top: 50px;
+	}
+
+	.circulo {
+		width: 150px;
+		height: 150px;
+	}
+
 
 	/*------------    Eventos          --------------*/
 
@@ -700,7 +682,7 @@ footer a {
 	}
 
 	.eventos__imagen {
-		width: 100%;
+		display: none;
 	}
 
 	.eventos__imagen img {
@@ -719,7 +701,6 @@ footer a {
 	}
 
 	.galeria li {
-		/*width: 100%;*/
 		list-style: none;
 	}
 
@@ -727,19 +708,30 @@ footer a {
 		width: 100%;
 	}
 
-	/*-------- Contacto  ------*/
 
-	input[type="text"],
-	input[type="email"] {
-		display: block;
-		width: 100%;
-		height: fit-content;
-		margin-bottom: 30px;
+/*-----------------------------------------   Musica    --------------------*/
+
+	.musica_container {
+		width: 60%;
 	}
+
+
+/*----------------------------------------- Contacto ------------------*/
+
+	.contacto__container {
+		width: 80%;
+	}
+
 
 }
 
 
+/*--------------------   footer    --------------------------------*/
+
+footer a {
+	font-size: 4rem;
+	margin: 0 10px;
+}
 
 /*=================================  MOVIL =======================================*/
 
@@ -748,17 +740,52 @@ footer a {
 		font-size: 40%;
 	}
 
+	/*------------------  home ---------------------------*/
+
 	#home {
-		max-height: 400px;
+		max-height: 527px;
 	}
 
 	.logo {
-		width: 50%;
+		width: 80%;
 	}
 
+	/*----------------------- bio --------------------------------*/
+
+	.circulo {
+		width: 120px;
+		height: 120px;
+	}
+
+	/*-----------------------    Musica      ---------------------*/
+	
+	.musica_container {
+		width: 70%;
+	}
+
+	/*-----------------------   contacto    ------------------------*/
 
 
+	#contacto{
+		padding-top: 50px;
 
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		display: block;
+		width: 100%;
+
+	} 
+
+
+	/*------------------------------   footer   ----------------------------*/
+
+	footer a {
+		font-size: 5rem;
+
+	}
+	
 
 
 }
