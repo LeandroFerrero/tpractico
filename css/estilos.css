@@ -26,6 +26,7 @@ body {
 	font-weight: bolder;
 	background: tomato;
 	max-width: 1600px;
+	min-width: 360px;
 	margin: auto;
 }
 
@@ -164,8 +165,9 @@ header {
 
 
 .logo {
-	flex-basis: 30%;
-}
+	flex-basis: 40%;
+
+} 
 
 .logo img {
 	width: 100%;
@@ -344,7 +346,7 @@ header {
 
 .item__evento {
 
-	padding: 100px;
+	padding: 10px;
 	text-align: center;
 }
 
@@ -556,9 +558,36 @@ footer a {
 }
 
 
-/*============================================================================================
+/*============================================================================================********************
 		--------------------------------- media querys---------------------------- 
   ============================================================================================*/
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+	h1.titulo, h1.titulo span,.nav__label {
+		font-size: 2.5rem;
+	}
+	.nav__menu {
+		gap: 1.5rem;
+	}
+	.nav__item {
+		font-size: 1.5rem;
+	}
+
+	.item__evento h2 {
+		font-size: 2.3rem;
+	}
+
+	.item__evento h3 {
+		font-size: 1.8rem;
+	}
+
+	.item__evento p {
+		font-size: 1.3rem;
+	}
+
+}
+
 
 
 /*===========================  TABLET ==================================*/
@@ -660,7 +689,7 @@ footer a {
 	/*---------------------    BIO    --------------------*/
 
 
-	.bio__container > .titulo{
+	.bio__container>.titulo {
 		margin-top: 50px;
 	}
 
@@ -709,14 +738,14 @@ footer a {
 	}
 
 
-/*-----------------------------------------   Musica    --------------------*/
+	/*-----------------------------------------   Musica    --------------------*/
 
 	.musica_container {
 		width: 60%;
 	}
 
 
-/*----------------------------------------- Contacto ------------------*/
+	/*----------------------------------------- Contacto ------------------*/
 
 	.contacto__container {
 		width: 80%;
@@ -743,13 +772,17 @@ footer a {
 	/*------------------  home ---------------------------*/
 
 	#home {
-		max-height: 527px;
+		max-height: 584px;
 	}
 
 	.logo {
-		width: 80%;
+		flex-basis: 80%;
 	}
 
+	.logo img {
+
+		width: 80%
+	}
 	/*----------------------- bio --------------------------------*/
 
 	.circulo {
@@ -758,7 +791,7 @@ footer a {
 	}
 
 	/*-----------------------    Musica      ---------------------*/
-	
+
 	.musica_container {
 		width: 70%;
 	}
@@ -766,7 +799,7 @@ footer a {
 	/*-----------------------   contacto    ------------------------*/
 
 
-	#contacto{
+	#contacto {
 		padding-top: 50px;
 
 	}
@@ -776,7 +809,7 @@ footer a {
 		display: block;
 		width: 100%;
 
-	} 
+	}
 
 
 	/*------------------------------   footer   ----------------------------*/
@@ -785,7 +818,41 @@ footer a {
 		font-size: 5rem;
 
 	}
-	
+
 
 
 }
+
+
+@media (max-width: 426px) {
+
+	*/------ home ------*/ .logo {
+		flex-basis: 100%;
+	}
+
+	.logo img {
+		width: 100%;
+	}
+
+
+	/*------- eventos  -------*/
+	.item__evento {
+		padding: 10px;
+	}
+
+	/*-------  Musica  ---------*/
+
+	.musica_container {
+		margin: 10px;
+		width: 90%;
+
+	}
+
+
+
+}
+
+
+
+
+
