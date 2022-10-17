@@ -10,7 +10,6 @@ function cerrarMenu() {
   document.querySelector('.nav__input').checked = false;
 }
 
-
 /*---------------   Validacion Formulario --------------------*/
 
 document.addEventListener("DOMContentLoaded", function () {
